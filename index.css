@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+:root {
+
+    --fw-500: 500;
+    --fw-600: 600;
+
+    --fs: 13px;
+
+}
+
+body {
+    background-color: hsl(213, 44%, 95%);
+    font-size: var(--fs);
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: repeat(4, 245px);
+    grid-template-rows: repeat(2, 248px);
+    gap: 1rem;
+    width: 80%;
+    height: 80%;
+    border-bottom-left-radius: 3px;
+}
+
+.grid-items {
+    gap: 1rem;
+    border-radius: 5px;
+    padding: 1.5em 2em;
+    box-shadow: 0px 3px 9px black;
+}
+
+#item-1 {
+
+    grid-column: span 2;
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 85%;
+}
+
+#item-1 img {
+    outline: solid hsl(264, 74%, 69%);
+}
+
+#item-2 {
+    border: 1px solid grey;
+    background-color: hsl(219, 19%, 35%);
+}
+
+#item-3 {
+    order: 1;
+}
+
+#item-4 {
+    order: 2;
+    background-color: red;
+    grid-column: span 2;
+    background-color: hsl(217, 30%, 14%);
+}
+
+#item-4 img {
+    outline: solid hsl(263, 55%, 52%);
+}
+
+#item-5 {
+    grid-row: span 2;
+    background-color: hsl(0, 0%, 100%);
+}
+
+#item-5 .para-container>p:last-child {
+    line-height: 16px;
+}
+
+.img-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.img-container>img {
+
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+}
+
+.para-container {
+    padding-top: 0.8em;
+}
+
+.para-container>p {
+
+    margin: 15px 0;
+}
+
+.para-container>p:first-child {
+    font-size: 17px;
+    font-weight: var(--fw-600);
+    color: white;
+}
+
+.img-container>div>p:last-child,
+.para-container>p:last-child {
+    color: hsl(204, 4%, 77%);
+    font-weight: var(--fw-500X);
+}
+
+#item-1 p:first-child,
+#item-2 p:first-child,
+#item-4 p:first-child {
+    color: white;
+}
+
+
+#item-3 p:first-child,
+#item-5 p:first-child {
+    color: hsl(227, 9%, 40%);
+    font-weight: var(--fw-600);
+}
+
+@media (0 < width <=500px) {
+    body {
+        overflow: auto;
+        padding: 2rem 0;
+    }
+
+    .grid-container {
+        margin: 6rem 0;
+        padding: 2.1rem;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .grid-items {
+        display: block;
+    }
+
+    #item-5 {
+        order: 3;
+    }
+
+}
