@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Live Site URL: [Live site URL](https://faisal786111.github.io/Grid-system/)
 
 ## My process
 
@@ -56,7 +56,7 @@ For continued development, I aim to focus on further refining my skills in web d
 
 ## Author
 
-- Website - [Faisal Khan](https://www.your-site.com)
+- Website - [Faisal Khan](https://faisal786111.github.io/Grid-system/)
 - Frontend Mentor - [@Faisal786111](https://www.frontendmentor.io/profile/Faisal786111)
 - Twitter - [@Faisal_DevLife](https://twitter.com/Faisal_DevLife)
 
