@@ -60,4 +60,3 @@ For continued development, I aim to focus on further refining my skills in web d
 - Frontend Mentor - [@Faisal786111](https://www.frontendmentor.io/profile/Faisal786111)
 - Twitter - [@Faisal_DevLife](https://twitter.com/Faisal_DevLife)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
